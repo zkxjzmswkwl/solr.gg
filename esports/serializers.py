@@ -8,7 +8,10 @@ class TeamSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-# class GameSerializer(serializers.ModelSerializer):
+class GameSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Game
+        fields = '__all__'
 
 
 class  PlayerSerializer(serializers.ModelSerializer):
