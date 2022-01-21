@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'esports.apps.EsportsConfig'
+    'esports.apps.EsportsConfig',
+    'crm.apps.CrmConfig'
 ]
 
 MIDDLEWARE = [
