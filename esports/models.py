@@ -14,6 +14,9 @@ class Player(models.Model):
     internet_name = models.CharField(max_length=32, null=False, blank=False, default='PoopSteve420')
     last_name = models.CharField(max_length=32)
 
+    def __str__(self):
+        return f"{self.first_name} \"{self.internet_name}\" {self.last_name}"
+
 
 class Team(models.Model):
     game = models.ForeignKey(Game, on_delete=models.CASCADE)
