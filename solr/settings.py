@@ -27,7 +27,7 @@ SECRET_KEY = '^@wm5z7j!*_4x_ej=f-ymf%&pqbt5_s@l0evy=^8h+3eor00jh'
 DEBUG = True
 
 ALLOWED_HOSTS = ["*", "solr.gg"]
-
+CSRF_TRUSTED_ORIGINS = ['https://solr.gg']
 CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
