@@ -28,8 +28,8 @@ class Team(models.Model):
     sign_date = models.DateTimeField(auto_now_add=True)
     release_date = models.DateTimeField(null=True, blank=True)
     active = models.BooleanField(default=True)
-    coach = models.ForeignKey(Player, related_name='team_coach', on_delete=models.CASCADE)
-    manager = models.ForeignKey(Player, related_name='team_manager', on_delete=models.CASCADE)
+    coach = models.ForeignKey(Player, related_name='team_coach', on_delete=models.CASCADE, null=True, blank=True)
+    manager = models.ForeignKey(Player, related_name='team_manager', on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
         return f'{self.game.title}'
