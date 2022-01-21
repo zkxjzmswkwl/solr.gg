@@ -26,7 +26,7 @@ SECRET_KEY = '^@wm5z7j!*_4x_ej=f-ymf%&pqbt5_s@l0evy=^8h+3eor00jh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["solr.gg"]
+ALLOWED_HOSTS = ["*", "solr.gg"]
 
 
 # Application definition
